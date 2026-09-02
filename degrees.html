@@ -437,12 +437,6 @@
     </div>
   </div>
 
-  <div id="resultArea"></div>
-
-  <h2>How this works</h2>
-  <p class="note">The graph is the same week-1 snapshot from the course data page — 303 characters, 1,784 directed Wikipedia links, loaded straight into your browser as JSON. Pressing "Find the Path" builds an adjacency list on the spot and runs breadth-first search from the starting character, which guarantees the shortest possible chain (BFS explores one hop at a time, so the first time it reaches the target is provably the shortest route). By default the search ignores link direction — treating "A links to B" the same as "B links to A" — since that's what makes a six-degrees-style search meaningful for a directed, sparse wiki graph. Tick the box above to restrict it to real directed edges instead, and watch some paths get longer or disappear entirely.</p>
-  <p class="note">Not every pair is connected. 17 characters (like Baymax) have zero links in either direction, and a 9-character clique (the Morituri) is only connected to itself — no BFS, however patient, will find a bridge out.</p>
-
 </main>
 
 <footer>
